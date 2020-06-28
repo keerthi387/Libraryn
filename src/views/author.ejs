@@ -91,20 +91,25 @@
           
           <!--/stories-->
 
-          <%for(i=0;i<booksl.length;i++){%>
+          <%for(i=0;i<author.length;i++){%>
           <div class="row">    
             <br>
             <div class="col-md-2 col-sm-3 text-center">
-              <a class="story-title" href="#"><img alt="" src="/images/<%=booksl[i].img%>" style="width:100px;height:100px" class="img-circle"></a>
+              <a class="story-title" href="#"><img alt="" src="/images/<%=author[i].img%>" style="width:100px;height:100px" class="img-circle"></a>
             </div>
             <div class="col-md-10 col-sm-9">
-              <h3><label for="">NAME:</label><%=booksl[i].title%></h3>
+              <h3><label for="">NAME:</label><%=author[i].author%></h3>
               <div class="row">
                 <div class="col-xs-9">
-                  <h4><label for="">OCCUPATION:</label><%=booksl[i].author%></h4><h4>
-                  <h2 style="font-size: small;"><label for="">ABOUT:</label><%=booksl[i].about%>
-                  </h2></div>
-                <div class="col-xs-3"></div>
+                  <h4><label for="">OCCUPATION:</label><%=author[i].occupation%></h4><h4>
+                  <h2 style="font-size: small;"><label for="">ABOUT:</label><%=author[i].about%>
+                  </h2>
+                  <small style="font-family:courier,'new courier';" class="text-muted">2 hours ago  • <a href="/author/<%=author[i]._id%>" class="text-muted">Read More</a></small>
+
+                </div>
+                <div class="col-xs-3">
+
+                </div>
               </div>
               <br><br>
             </div>

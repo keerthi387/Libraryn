@@ -14,7 +14,7 @@
 </head>
 <body>
 	
-<script src="/js/login.js"></script>
+<!-- <script src="/js/login.js"></script> -->
   <div class="container">
 	<div class="d-flex justify-content-center h-100">
 		<div class="card">
@@ -27,12 +27,12 @@
 				</div>
 			</div>
 			<div class="card-body">
-				<form action="/" onsubmit="return validate();">
+				<form method="POST" action="/login/exx" onsubmit="return validate();">
 					<label for="" class="ma" placeholder="enter mail id">Email</label><br>
-					<input type="text" id="mail"><br><br>
+					<input type="text" name="mail" id="mail"><br><br>
 				
 					<label for="" class="ma">Password</label><br>
-					<input type="password" id="password"><br><br>
+					<input type="password" name="password" id="password"><br><br>
 					<button type="submit" class="btn btn-primary">login</button>
 <!-- 					
 					<div class="row align-items-center remember">

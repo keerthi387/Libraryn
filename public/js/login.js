@@ -1,3 +1,10 @@
+const mongoose=require('mongoose');
+
+//database connection
+mongoose.connect('mongodb://localhost:27017/library');
+
+
+
 function validate(){
     var eMail=document.getElementById("mail").value;
     var pass=document.getElementById("password").value;
